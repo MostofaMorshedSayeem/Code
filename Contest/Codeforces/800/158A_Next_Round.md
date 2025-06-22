@@ -38,8 +38,33 @@ Output the number of participants who advance to the next round.
 
 
 ```c
+#include <stdio.h>
 
-zzzz
+int main() {
+    int n, k;
+    int arr[105];
+    int arr2[105];
+    int count = 0;
+
+    scanf("%d %d", &n, &k);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int j = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] >= arr[k - 1]) {
+            if (arr[i] > 0) {
+                arr2[j] = arr[i];
+                j++;
+                count++;
+            }
+        }
+    }
+    printf("%d\n", count);
+    return 0;
+}
 
 ```
 

@@ -1,0 +1,42 @@
+# Start with a clean, readable base
+BasedOnStyle: Google
+
+# Java-style brace formatting (} else { on the same line)
+BreakBeforeBraces: Attach
+
+# Consistent indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never  # Use spaces for indentation, like in Java
+
+# Good for both C and C++ function declarations/definitions
+AlignAfterOpenBracket: Align
+AlignOperands: true
+AlignConsecutiveAssignments: true
+
+# Improve readability in nested statements
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortBlocksOnASingleLine: false
+
+# Space and formatting choices
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInCStyleCastParentheses: false
+PointerAlignment: Left
+DerivePointerAlignment: false
+
+# Line length and wrapping
+ColumnLimit: 100
+BreakBeforeBinaryOperators: None
+PenaltyBreakBeforeFirstCallParameter: 19
+PenaltyBreakComment: 300
+
+# Include style (for future C++ usage)
+SortIncludes: true
+IncludeBlocks: Regroup
+
+# C++-friendly options (ignored in plain C, safe to include)
+Cpp11BracedListStyle: true
+Standard: Latest
